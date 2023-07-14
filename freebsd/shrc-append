@@ -1,0 +1,18 @@
+# use 256 color xterm
+export TERM="xterm-256color"
+# set urxvt as default terminal
+export TERMINAL="/usr/local/bin/urxvtc"
+
+# export user local bin directory to PATH
+PATH=${PATH}:/usr/home/arb/.local/bin
+export PATH
+
+# source the .aliases file
+if [ -f ~/.aliases ]; then
+  . ~/.aliases
+fi
+
+# source the .aliases_freebsd file
+if [ -f ~/.aliases_freebsd ]; then
+  . ~/.aliases_freebsd
+fi
