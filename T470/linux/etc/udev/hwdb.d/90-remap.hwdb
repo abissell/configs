@@ -1,0 +1,6 @@
+# reference /sys/class/dmi/id/modalias for kernel modalias
+evdev:atkbd:dmi:bvn*:bvr*:bd*:br*:efr*:svnLENOVO:pn20JNS29X02:pvr*	# match built-in laptop keyboard
+ KEYBOARD_KEY_3a=29							# remap CapsLock 0x_3aba, found with showkey --scancodes, to L-Ctrl, found with showkey --keycodes
+
+evdev:input:b0003v24F0p0137*						# match Das Keyboard
+ KEYBOARD_KEY_70039=29							# remap CapsLock to L-Ctrl
