@@ -1,0 +1,18 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/mapper/root
+UUID=fb11a41e-3b9e-4153-8d10-1c0a855ab916	/         	btrfs     	rw,noatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvol=/@	0 0
+
+# /dev/mapper/root
+UUID=fb11a41e-3b9e-4153-8d10-1c0a855ab916	/home     	btrfs     	rw,noatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvol=/@home	0 0
+
+# /dev/nvme0n1p1
+UUID=DDFE-690C      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# /dev/mapper/root
+UUID=fb11a41e-3b9e-4153-8d10-1c0a855ab916	/swap     	btrfs     	rw,noatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvol=/@swap	0 0
+
+# swapfile
+/swap/swapfile none swap defaults 0 0
