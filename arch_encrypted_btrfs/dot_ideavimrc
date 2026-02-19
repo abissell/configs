@@ -1,0 +1,7 @@
+""" Map leader to space ---------------------
+let mapleader=" "
+
+""" Mappings --------------------------------
+map <leader>sf <Action>(GotoFile)
+map <leader>s. <Action>(RecentFiles)
+map gra :action RenameElement<CR>
