@@ -1,0 +1,5 @@
+-Xms1G
+-Xmx6G
+-XX:CompileCommand=exclude,com/intellij/openapi/vfs/impl/FilePartNodeRoot,trieDescend
+-XX:SoftRefLRUPolicyMSPerMB=50
+-Dide.show.tips.on.startup.default.value=false
